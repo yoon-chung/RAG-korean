@@ -1,0 +1,30 @@
+# 대회 데이터
+data/
+*.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Elasticsearch
+elasticsearch-*/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# 환경변수
+.env
+**/.env
+
+# 실험 로그·캐시·인덱스·모델 (대용량, 재생성 가능)
+rag_system/logs/
+rag_system/faiss_indices/
+rag_system/models/
+rag_system/.llm_cache/
