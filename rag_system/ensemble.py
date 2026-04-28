@@ -10,7 +10,7 @@ python ensemble_submissions.py \
     --inputs logs/EXP-14/submission.csv logs/EXP-17/submission.csv logs/EXP-18/submission.csv \
     --output logs/ENSEMBLE-001/submission.csv
 
-# 특정 submission에 가중치 (EXP-14 더 신뢰)
+# 특정 submission에 가중치
 python ensemble_submissions.py \
     --inputs A.csv B.csv C.csv \
     --weights 1.5 1.0 1.0 \
@@ -169,7 +169,7 @@ def main():
     print(f"\nOutput: {out_path}")
     print(f"  total: {len(out)} / empty: {empty_out} / non-empty: {len(out) - empty_out}")
 
-    # Config dump — 재현성 및 추적용 (rag.py 실험 구조와 동일하게)
+    # Config dump - 재현성 및 추적용 (rag.py 실험 구조와 동일하게)
     config = {
         "mode": "ensemble",
         "timestamp": _dt.datetime.now().isoformat(timespec="seconds"),

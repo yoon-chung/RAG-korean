@@ -1,5 +1,5 @@
 """
-Pseudo Query 생성기 — Reranker/Embedding Fine-tuning용 학습 데이터
+Pseudo Query 생성기 - Reranker/Embedding Fine-tuning용 학습 데이터
 
 사용법:
     # Solar Pro로 생성 (기본)

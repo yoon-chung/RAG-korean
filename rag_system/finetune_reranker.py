@@ -1,5 +1,5 @@
 """
-Reranker Fine-tuning — bge-reranker-v2-m3 도메인 적응
+Reranker Fine-tuning - bge-reranker-v2-m3 도메인 적응
 
 사용법:
     # 기본 실행 (bge-reranker-v2-m3 fine-tuning)

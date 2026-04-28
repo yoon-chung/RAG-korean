@@ -1,5 +1,5 @@
 """
-분석 스크립트: EXP-02-003 (MAP 0.8318) CSV의 rerank top-1 score 분포를 보고
+분석 스크립트: classifier=none baseline (MAP 0.8318) CSV의 rerank top-1 score 분포를 보고
 classifier=none + score threshold 필터링의 최적 τ 후보 탐색.
 
 목적: "사후 필터"로 분류기를 대체할 때, score < τ 인 경우 topk=[] 처리.
@@ -74,7 +74,7 @@ def main():
         print(f"  {marker} id={a['eval_id']:3d}  score={a['top1_score']:.4f}  {a['query']}")
 
     unans = [a for a in filled if a["unanswerable"]]
-    print(f"\n[답변 불가 케이스 ({len(unans)}개)] — retrieval 실패. threshold로 잘못 자르면 손해")
+    print(f"\n[답변 불가 케이스 ({len(unans)}개)] - retrieval 실패. threshold로 잘못 자르면 손해")
     for a in unans:
         s = a["top1_score"]
         print(f"  id={a['eval_id']:3d}  top1_score={s:.4f}  {a['query']}")
